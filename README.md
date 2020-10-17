@@ -25,6 +25,8 @@ $ yarn dev
 The primary difference is that for `vite` there is no bundling during development. The ES Import syntax in your source code is served directly to the browser, and the browser parses them via native `<script module>` support, making HTTP requests for each import. The dev server intercepts the requests and performs code transforms if necessary. For example, an import to a `*.vue` file is compiled on the fly right before it's sent back to the browser.
 
 There are a few advantages of this approach:
+.
+
 
 - Since there is no bundling work to be done, the server cold start is extremely fast.
 
